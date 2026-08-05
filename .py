@@ -1,4 +1,4 @@
-import turtle
+"""import turtle
 import time
 
 screen = turtle.Screen()
@@ -53,4 +53,4 @@ pen.write("Have a Wonderful Day! 🎂",
           align="center",
           font=("Arial", 18, "bold"))
 
-turtle.done()
+turtle.done()"""

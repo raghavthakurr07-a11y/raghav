@@ -1,4 +1,5 @@
 
+# Unique Spiral Animation
 
 """import turtle
 import colorsys
@@ -55,6 +56,7 @@ while True:
     screen.update()"""
     
 #animation
+
 """import colorsys 
 import turtle
 screen = turtle.Screen()
@@ -71,7 +73,7 @@ for i in range(200):
     t.left(30)
     t.circle(i, 45)
     turtle.done  """
-    
+"""    
 from turtle import * 
 import colorsys
 
@@ -88,12 +90,68 @@ for i in range(16):
         lt(90)
         circle(150 - j * 6, 90)
         rt(180)
-        circle(40, 24)
+        circle(40, 24)"""
         
+#pending code for birthday animation with album, photo, music, and animation
 
+"""#big birthaday +albumb +photo +music +animation
+import os
+import time
+from PIL import Image
+import pygame
+#folder jisme photo s rakhe hai
+image_folder = "C:/Users/HP/Downloads/album"
+#background_music
+pygame.mixer.init()
+pygame.mixer.music.load("C:/Users/HP/Downloads/music.mp3")
+pygame.mixer.music.play(-1)  # -1 means loop indefinitely
+#photo list
+photos = [f for f in os.listdir(image_folder) if f.endswith(('.png', '.jpg', '.jpeg'))]
+for photo in photos:
+    image_path = os.path.join(image_folder, photo)
+    img = Image.open(image_path)
+    img.show()
+    time.sleep(5)  # Display each photo for 5 seconds
+    img.close()
+pygame.mixer.music.stop()  # Stop the music after displaying all photos
+print("Happy Birthday!🎂 Enjoy the album and music!")"""
+            
+"""import time
+import os
 
-            
-            
+message = """
+
+#birthday animation
+
+"""██╗  ██╗ █████╗ ██████╗ ██████╗ ██╗   ██╗
+██║  ██║██╔══██╗██╔══██╗██╔══██╗╚██╗ ██╔╝
+███████║███████║██████╔╝██████╔╝ ╚████╔╝
+██╔══██║██╔══██║██╔═══╝ ██╔═══╝   ╚██╔╝
+██║  ██║██║  ██║██║     ██║        ██║
+╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝        ╚═╝
+
+██████╗ ██╗██████╗ ████████╗██╗  ██╗██████╗  █████╗ ██╗   ██╗
+██╔══██╗██║██╔══██╗╚══██╔══╝██║  ██║██╔══██╗██╔══██╗╚██╗ ██╔╝
+██████╔╝██║██████╔╝   ██║   ███████║██║  ██║███████║ ╚████╔╝
+██╔══██╗██║██╔══██╗   ██║   ██╔══██║██║  ██║██╔══██║  ╚██╔╝
+██████╔╝██║██║  ██║   ██║   ██║  ██║██████╔╝██║  ██║   ██║
+╚═════╝ ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝╚═════╝ ╚═╝  ╚═╝   ╚═╝"""
+"""
+
+name = input("Enter Birthday Person Name: ")
+
+for i in range(3):
+    os.system("cls" if os.name == "nt" else "clear")
+    print(message)
+    print("\n🎉🎂🎉🎂🎉🎂🎉🎂🎉🎂🎉")
+    print(f"\n✨ HAPPY BIRTHDAY {name.upper()} ✨\n")
+    print("🎈 Wishing You Happiness 🎈")
+    print("🎁 Success • Health • Love • Joy 🎁")
+    print("🎉 Have a Wonderful Year Ahead! 🎉")
+    print("\n🎂🎉🎂🎉🎂🎉🎂🎉🎂🎉")
+    time.sleep(1)
+
+print("\n🎆🎆🎆 HAPPY BIRTHDAY! 🎆🎆🎆")"""
     
     
     
