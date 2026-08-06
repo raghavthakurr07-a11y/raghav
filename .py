@@ -13,7 +13,7 @@ pen.penup()
 
 # Happy Birthday Text
 pen.goto(0, 100)
-pen.write("🎉 HAPPY BIRTHDAY 🎉 PRERNA ❤️", align="center",
+pen.write("🎉 HAPPY BIRTHDAY 🎉  ❤️", align="center",
           font=("Arial", 24, "bold"))
 
 time.sleep(1)
