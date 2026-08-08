@@ -92,3 +92,60 @@ elif operator=='/':
         print(a/b)
 else:
     print("Invalid operator")"""
+    
+#prime no and not, enter by the user 
+
+"""num=int(input("Enter a number: "))
+count = 0
+for i in range(2, num+1):
+    if num % i == 0:
+        count=count + 1
+if count ==2:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")"""
+    
+"""#fibonacci series
+num=int(input("Enter a number: "))
+a, b = 0, 1
+for _ in range(num):
+    print(a, end=" ")
+    a, b = b, a + b """
+    
+#add two numbers using function
+
+"""def add_numbers(a, b):
+    return a + b """
+
+# Example usage
+
+"""result = add_numbers(5, 3)
+print("The sum is:", result)"""
+
+# reveerse a string plindrome or not
+
+"""text=input("enter a string:")
+reversed_text=text[::-1]
+if text==reversed_text:
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")"""
+    
+ #check prime or not
+    
+"""num = 5
+count=0
+for i in range (1,num+1) :
+    if num% i==0:
+     count=count+1
+    if count ==2:
+     print("prime")
+else:
+    print("not prime")
+"""
+#for loop for printing numbers in pattern order in reverse order
+
+"""for i in range(1000, 0, -1):
+    for j in range(i, 0, -1):
+        print(j, end=" ")
+    print()"""
