@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Prerna 1 month  Advance 🎂</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 55px;
+            animation: glow 1.5s infinite alternate;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin: 15px;
+        }
+
+        .message {
+            font-size: 20px;
+            max-width: 600px;
+            line-height: 1.6;
+        }
+
+        .cake {
+            font-size: 100px;
+            margin: 20px;
+            animation: bounce 1s infinite;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 14px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            background: white;
+            color: #243b55;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .balloon {
+            position: absolute;
+            font-size: 50px;
+            animation: float 6s linear infinite;
+        }
+
+        .b1 { left: 10%; bottom: -100px; animation-delay: 0s; }
+        .b2 { left: 30%; bottom: -100px; animation-delay: 2s; }
+        .b3 { right: 25%; bottom: -100px; animation-delay: 1s; }
+        .b4 { right: 8%; bottom: -100px; animation-delay: 3s; }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px white;
+            }
+            to {
+                text-shadow: 0 0 30px #ffcc00,
+                             0 0 50px #ff66cc;
+            }
+        }
+
+        @keyframes bounce {
+            50% {
+                transform: translateY(-15px);
+            }
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-120vh);
+            }
+        }
+
+        .heart {
+            position: absolute;
+            font-size: 25px;
+            animation: fall 4s linear infinite;
+        }
+
+        @keyframes fall {
+            from {
+                top: -50px;
+                opacity: 1;
+            }
+            to {
+                top: 100vh;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="balloon b1">🎈</div>
+    <div class="balloon b2">🎈</div>
+    <div class="balloon b3">🎈</div>
+    <div class="balloon b4">🎈</div>
+
+    <div class="container">
+
+        <div class="cake">🎂</div>
+
+        <h1>🎉 HAPPY BIRTHDAY Prerna 1 month Advance 🎉</h1>
+
+        <h2>💖 Dear my wife 💖</h2>
+
+        <p class="message">
+            Wishing you a very Happy Birthday! 🥳<br>
+            May your life always be filled with happiness,
+            success, love and beautiful memories. ✨
+        </p>
+
+        <button onclick="celebrate()">
+            🎁 Click for Surprise
+        </button>
+
+    </div>
+
+    <script>
+
+        function celebrate() {
+
+            document.querySelector("h2").innerHTML =
+                "🎊 MANY MANY HAPPY RETURNS OF THE DAY! 🎊";
+
+            document.querySelector(".message").innerHTML =
+                "✨ May all your dreams come true! ✨<br>" +
+                "Keep smiling and keep shining always! 💖🥳";
+
+            // Confetti
+            for (let i = 0; i < 80; i++) {
+
+                let heart = document.createElement("div");
+
+                heart.className = "heart";
+                heart.innerHTML =
+                    ["🎉", "💖", "✨", "🎊", "❤️"][Math.floor(Math.random() * 5)];
+
+                heart.style.left = Math.random() * 100 + "vw";
+                heart.style.animationDuration =
+                    (2 + Math.random() * 4) + "s";
+
+                document.body.appendChild(heart);
+
+                setTimeout(() => {
+                    heart.remove();
+                }, 6000);
+            }
+        }
+
+    </script>
+
+</body>
+</html>
